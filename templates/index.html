@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupcakes Remake</title>
+  </head>
+  <body>
+    <h1>Cupcakes Remake</h1>
+
+    <form>
+      <div>
+        <label for="flavor">Flavor</label>
+        <input id="flavor_input" type="text" name="flavor" />
+      </div>
+      <div>
+        <label for="size">Size</label>
+        <input id="size_input" type="text" name="size" />
+      </div>
+      <div>
+        <label for="rating">Rating</label>
+        <input id="rating_input" type="text" name="rating" />
+      </div>
+      <div>
+        <label for="image">Image</label>
+        <input id="image_input" type="text" name="image" />
+      </div>
+
+      <button id="submit_button" type="submit">Submit</button>
+    </form>
+
+    <div>
+      <ul id="cupcakes_list"></ul>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/static/cupcakes.js"></script> <!-- !MUST LOOK IN STATIC WHEN USING FLASK -->
+  </body>
+</html>
